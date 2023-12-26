@@ -8,11 +8,11 @@ const Ingredient = require('../models/Ingredient')
 
 const recogImage = async (req, res) => {
 	const model = new TeachableMachine({
-		modelUrl: "https://teachablemachine.withgoogle.com/models/8eKP0euVB/"
+		modelUrl: "https://teachablemachine.withgoogle.com/models/0dl3HEMRS/"
 	});
 	const { photo } = req.body
 	console.log(photo)
-	await fs.writeFileSync("programming.txt", photo);
+	// await fs.writeFileSync("programming.txt", photo);
 	// const url = data.toString()
 	// console.log(url)
 	return model.classify({

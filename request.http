@@ -41,7 +41,7 @@ Content-Type: application/json
 
 POST http://localhost:5000/ingredients
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTcwN2VkMGM3MjdhMTNhYmM1MDA5ZjciLCJpYXQiOjE3MDE5MzU3MjZ9.gxD2oROVUE74EjY3vY0iDfai8hgsK02xqHxsiyvzV5E
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTcwN2VkMGM3MjdhMTNhYmM1MDA5ZjciLCJpYXQiOjE3MDM2MDUzNjF9.eJGVVzuxmP2oTcs8IYUWS2R8csH88-5SQzEkClN2kFw
 
 {
   "title": "bắp cải",
