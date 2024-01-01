@@ -29,7 +29,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTcwN
 
 ###
 
-POST https://w2c.onrender.com/auth/login
+POST http://localhost:5000/auth/login
 Content-Type: application/json
 
 {
@@ -106,12 +106,12 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTcwN
 
 ###
 
-POST http://localhost:5000/meals/render
+POST http://w2c.onrender.com/meals/render
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTcwN2VkMGM3MjdhMTNhYmM1MDA5ZjciLCJpYXQiOjE3MDI5NDUwMTd9.PLxXQaZAmUsigeWkAAMoZlBhFP364Y9HGV1qvuOntpM
 
 {
-  "ingredients": ["nấm kim châm", "thịt gà", "bắp cải", "thịt cốp lết"]
+  "ingredients": ["Mướp"]
 }
 
 ###
@@ -126,9 +126,9 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTcwN
 
 ###
 
-GET https://w2c.onrender.com/user/meals
+GET http://localhost:5000/user/meals
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTcwN2VkMGM3MjdhMTNhYmM1MDA5ZjciLCJpYXQiOjE3MDI5NDUwMTd9.PLxXQaZAmUsigeWkAAMoZlBhFP364Y9HGV1qvuOntpM
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTcwN2VkMGM3MjdhMTNhYmM1MDA5ZjciLCJpYXQiOjE3MDQwOTUyMDZ9.LV6t96tU5OO3Hv_VuJfgoEcWmjWcjIogODGZ4rSPeN4
 
 ###
 

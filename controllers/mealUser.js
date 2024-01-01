@@ -4,9 +4,15 @@ const MealUser = require('../models/MealUser')
 
 const read = async (req, res) => {
     try {
-        const meals = await MealUser.find({ user: req.userId }).populate('meal', [
-            'title', 'image', 'recipe'
-        ])
+        const meals = await MealUser.find({ user: req.userId }).populate(
+            {
+                path: 'meal',
+                select: ['title', 'image', 'recipe'],
+                populate: {
+                    path: 'ingredients',
+                    select: ['title']
+                }
+            })
         res.json({ success: true, meals })
     } catch (error) {
         console.log(error)
@@ -29,7 +35,7 @@ const create = async (req, res) => {
 
 const remove = async (req, res) => {
     try {
-        const meal = await MealUser.findOneAndDelete({_id: req.params.id})
+        const meal = await MealUser.findOneAndDelete({ _id: req.params.id })
         if (meal) {
             res.json({
                 success: true,
@@ -38,16 +44,16 @@ const remove = async (req, res) => {
         }
         else {
             console.log(req.params.id)
-            res.json ({
+            res.json({
                 success: true,
                 message: 'meal invalid'
             })
         }
     } catch (error) {
         console.log(error)
-        res.status(500).json({success: false, message: 'Internal server error'})
+        res.status(500).json({ success: false, message: 'Internal server error' })
     }
-    
+
 }
 
 module.exports = { read, create, remove }
