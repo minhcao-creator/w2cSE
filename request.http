@@ -29,7 +29,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTcwN
 
 ###
 
-POST http://localhost:5000/auth/login
+POST https://w2c.onrender.com/auth/login
 Content-Type: application/json
 
 {
@@ -85,7 +85,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTcwN
 
 ###
 
-GET http://localhost:5000/meals
+GET https://w2c.onrender.com/meals
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTcwN2VkMGM3MjdhMTNhYmM1MDA5ZjciLCJpYXQiOjE3MDIwNDQ0Mjh9.JSKitE2Zd455a1Po40AVOPEgHfVY2EhyD03Lehhcvnw
 
@@ -116,23 +116,23 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTcwN
 
 ###
 
-POST http://localhost:5000/user/meals
+POST https://w2c.onrender.com/user/meals
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTcwN2VkMGM3MjdhMTNhYmM1MDA5ZjciLCJpYXQiOjE3MDI5NDUwMTd9.PLxXQaZAmUsigeWkAAMoZlBhFP364Y9HGV1qvuOntpM
 
 {
-  "meals" : ["65711967aa349f3830856378", "657122f2aa349f3830856380"]
+  "meals" : ["658b1c98c161e50034b1c556"]
 }
 
 ###
 
-GET http://localhost:5000/user/meals
+GET https://w2c.onrender.com/user/meals
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTcwN2VkMGM3MjdhMTNhYmM1MDA5ZjciLCJpYXQiOjE3MDI5NDUwMTd9.PLxXQaZAmUsigeWkAAMoZlBhFP364Y9HGV1qvuOntpM
 
 ###
 
-DELETE http://localhost:5000/user/meals/6580f227fdf1da0af08e8fad
+DELETE https://w2c.onrender.com/user/meals/658b5be03980dc003461bfba
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTcwN2VkMGM3MjdhMTNhYmM1MDA5ZjciLCJpYXQiOjE3MDI5NDUwMTd9.PLxXQaZAmUsigeWkAAMoZlBhFP364Y9HGV1qvuOntpM
 

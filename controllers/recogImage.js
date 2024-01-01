@@ -1,7 +1,7 @@
 const express = require("express");
 const TeachableMachine = require("@sashido/teachablemachine-node");
 const { createCanvas, loadImage } = require("canvas")
-const fs = require("fs")
+// const fs = require("fs")
 const IngredientUser = require('../models/IngredientUser')
 const Ingredient = require('../models/Ingredient')
 
@@ -11,7 +11,7 @@ const recogImage = async (req, res) => {
 		modelUrl: "https://teachablemachine.withgoogle.com/models/0dl3HEMRS/"
 	});
 	const { photo } = req.body
-	console.log(photo)
+	// console.log(photo)
 	// await fs.writeFileSync("programming.txt", photo);
 	// const url = data.toString()
 	// console.log(url)
