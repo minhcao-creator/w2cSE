@@ -23,7 +23,10 @@ const recogImage = async (req, res) => {
 		const newIngredientUser = new IngredientUser({ ingredient: ingredient._id, user: req.userId })
 		await newIngredientUser.save()
 		// res.json({ success: true, newIngredientUser })
-		return res.json(predictions[0]);
+		return res.json(
+			success : true,
+			ingredient
+		);
 	}).catch((e) => {
 		console.error(e);
 		res.status(500).send("Something went wrong!")
