@@ -24,8 +24,10 @@ const recogImage = async (req, res) => {
 		await newIngredientUser.save()
 		// res.json({ success: true, newIngredientUser })
 		return res.json(
-			success : true,
-			ingredient
+			{
+				success : true,
+				ingredient
+			}
 		);
 	}).catch((e) => {
 		console.error(e);
