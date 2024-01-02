@@ -9,6 +9,8 @@ const Ingredient = require('../models/Ingredient')
 const recogImage = async (req, res) => {
 	const model = new TeachableMachine({
 		modelUrl: "https://teachablemachine.withgoogle.com/models/0dl3HEMRS/"
+		// https://teachablemachine.withgoogle.com/models/0dl3HEMRS/
+		//https://teachablemachine.withgoogle.com/models/0dl3HEMRS/
 	});
 	const { photo } = req.body
 	// console.log(photo)
@@ -25,7 +27,7 @@ const recogImage = async (req, res) => {
 		// res.json({ success: true, newIngredientUser })
 		return res.json(
 			{
-				success : true,
+				success: true,
 				ingredient
 			}
 		);
